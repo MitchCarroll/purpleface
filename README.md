@@ -16,6 +16,8 @@ _Proposed Features:_
   * The whole program is generally lazy evaluated. 
   * At runtime, `maybe` bindings create multiple continuations.
   * Only continuations which result in valid result are retained.
+6. All statements return a value.
+7. The return value of a continuation is the last returned value inside of it.
 
 _Example Code:_
 ```
