@@ -16,11 +16,12 @@ _Proposed Features:_
   * The whole program is generally lazy evaluated. 
   * At runtime, `maybe` bindings create multiple continuations.
   * Only continuations which result in valid result are retained.
-  * ```
-  maybe a = 2?
-    if (a < 3) 
-       print a
-    ```
+  * 
+```
+maybe a = 2?
+  if (a < 3) 
+     print a
+```
     * first, binds `a` to a value which may be `2`, `maybe`, or `false`
     * in each of the 3 continuations, evaluates `a < 3`, creating another new continuation for each possible result
       * all conditional expressions return an optional value, so this evaluates to:
