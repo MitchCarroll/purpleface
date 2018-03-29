@@ -12,7 +12,8 @@ _Proposed Features:_
 4. There is no 'let' for binding variables; only `maybe`
   * `maybe 2?` returns a value that is either 2 (and `true`) or not 2 (and therefore, `maybe`)
   * `maybe a is 1 + (2?)?` will bind `a` to a value that may or may not be the sum of 1 and a number that may or may not be 2, so the possible values are (1?), 3, maybe, and false
-    * Note: `1 + maybe` is `maybe 1`, which has the shorthand `1?` 
+    * Note: `1 + maybe` is `maybe 1`, which has the shorthand `1?`
+    * `1?` resolves, of course, to `1` or `maybe`
 5. Optional values are all quantum-spooky. They do not resolve to concrete values until a concrete value is required.
   * The whole program is generally lazy evaluated. 
   * At runtime, `maybe` bindings create multiple continuations.
