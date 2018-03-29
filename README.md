@@ -18,7 +18,8 @@ _Proposed Features:_
   * The whole program is generally lazy evaluated. 
   * At runtime, `maybe` bindings create multiple continuations.
   * Only continuations which result in valid result are retained.
-6. All statements return a value.
+6. All expressions return a value.
+  * expressions are terminated by punctuation
 7. The return value of a continuation is the last returned value inside of it.
 8. Imperitive statements end with a `!`
 9. 'Quantum' values and statements end with a `?`
