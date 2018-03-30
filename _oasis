@@ -1,0 +1,14 @@
+OASISFormat: 0.4
+Name:        PurpleFace
+Version:     0.0
+Synopsis:    The PurpleFace Programming Language
+Authors:     Mitch Carroll, Rainger Rossway
+License:     MIT
+Executable purpleface
+  Path:       src
+  BuildTools: ocamlbuild
+  MainIs:     main.ml
+  CompiledObject: best
+Document doc
+  Title:      PurpleFace
+  InstallDir: $docdir
