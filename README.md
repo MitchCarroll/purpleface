@@ -27,7 +27,7 @@ _Proposed Features:_
 
 _Possible Example Code:_
 ```
-maybe a = 2?
+maybe a is 2?
 a < 3? 
 if true, print a!
 ```
