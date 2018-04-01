@@ -1,0 +1,21 @@
+<program> ::= <source> <footer>
+
+<source> ::= <expressions>
+
+<expression> ::= <option> | ( <expression> <operator> <expression> ) | maybe <variable> is <expression>? 
+
+<variable> ::= <letters>
+
+<operator> ::= + | - | * | / | ^ | & | '|' | ! | .
+
+<option> ::= maybe | false | <value>
+
+<value> ::= true | <data>
+
+<data> ::= <scalar> | <list>
+
+<list> ::= <option>, <option>
+
+<footer> ::= <statements>
+
+<statement> ::= <variable> : <stream>
